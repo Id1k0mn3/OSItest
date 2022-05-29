@@ -6,7 +6,8 @@ $type-font-size-2sm: 14px;
 $type-font-size-1md: 18px;
 $type-font-size-2md: 20px;
 $type-font-size-lg: 22px;
-$type-font-size-2lg: 30px;
+$type-font-size-2lg: 25px;
+$type-font-size-3lg: 30px;
 $type-font-size-xl: 40px;
 $type-font-size-2xl: 60px;
 
@@ -18,7 +19,8 @@ $type-font-size-map: map-merge($type-font-size-map, ('2sm': $type-font-size-2sm)
 $type-font-size-map: map-merge($type-font-size-map, ('1md': $type-font-size-1md));
 $type-font-size-map: map-merge($type-font-size-map, ('2md': $type-font-size-2md));
 $type-font-size-map: map-merge($type-font-size-map, ('lg': $type-font-size-lg));
-$type-font-size-map: map-merge($type-font-size-map, ('2lg': $type-font-size-lg));
+$type-font-size-map: map-merge($type-font-size-map, ('2lg': $type-font-size-2lg));
+$type-font-size-map: map-merge($type-font-size-map, ('3lg': $type-font-size-3lg));
 $type-font-size-map: map-merge($type-font-size-map, ('xl': $type-font-size-xl));
 $type-font-size-map: map-merge($type-font-size-map, ('xl': $type-font-size-2xl));
 

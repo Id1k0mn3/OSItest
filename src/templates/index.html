@@ -23,10 +23,15 @@
         <div class="el--p_t_1-md">
           <p class="text text--c_blue text--ta_center text--size_1sm text--size_1md-md text--w_500">Services that we provide.</p>
         </div>
-        <div class="services-wrapper el--p_h_5 el--p_h_none-md">
+        <div class="services-wrapper el--p_v_5 el--p_v_none-md el--m_h_4 el--m_h_6-md el--m_h_8-xl"">
           {% for item in services %}
-            {{ service.serviceBlock(item.title, item.description) }}
+            <div class="cell_12 cell_5-sm cell_3-lg cell_auto-xl el--p_f_2-till-xl">
+              {{ service.serviceBlock(item.title, item.description) }}
+            </div>
           {%endfor%}
+        </div>
+        <div class="row row--justify_center">
+          <a href="#" class='button button--bg_white button--br_1_blue button--c_blue button--hover_oposite el--p_h_3 el--p_v_5 el--p_h_4 el--p_v_9 text text--c_blue text--tr_uppercase'>find more</a>
         </div>
         <!-- <div>{{serviceModule|e}}</div> -->
       </div>

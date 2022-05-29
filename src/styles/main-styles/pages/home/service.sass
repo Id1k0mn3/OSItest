@@ -1,0 +1,27 @@
+.services-wrapper
+  @extend .row
+  @extend .row--justify_between
+  +mq-sm
+    justify-content: center
+  +mq-xl
+    justify-content: space-between
+
+.service
+  @extend .row
+  @extend .row--direction_column
+  @extend .row--align_center
+  @extend .row--justify_center
+  width: 100%
+  background: $relief-white
+  box-shadow: 0px 3px 20px rgba(36, 36, 36, 0.2)
+  +pointer
+  +tr
+  +mq-xl
+    max-width: 280px
+  &:hover
+    background: $relief-blue
+    box-shadow: 0px 3px 20px $relief-blue
+    .text
+      @extend .text--c_white
+    path
+      fill: $relief-white
