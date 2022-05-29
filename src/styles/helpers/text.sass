@@ -1,5 +1,6 @@
 .text
   font-family: 'Poppins', sans-serif
+  font-weight: 400
   &--
     &size_
       @each $size, $value in $type-font-size-map
@@ -36,7 +37,7 @@
               width: 14px
               height: 14px
               margin-left: 10px
-              margin-bottom: 9px
+              margin-bottom: 10px
           &-
             &main
               display: flex
@@ -68,3 +69,14 @@
       &uppercase
         +mq-adaptive
           text-transform: uppercase
+    &lh_
+      &16
+        line-height: 16px
+      &18
+        line-height: 18px
+      &20
+        line-height: 20px
+        &-
+          &md
+            +mq-md
+              line-height: 20px

@@ -1,0 +1,79 @@
+.news
+  &-
+    &block
+      max-width: 350px
+      +pointer
+      &:hover
+        +mq-xl
+          .news-block-wrapper:after
+            opacity: 0
+            +tr
+          .news-block-wrapper:before
+            opacity: 0.5
+            +tr
+          .news-block__title
+            +tr
+            text-decoration: underline
+      &-
+        &wrapper
+          position: relative
+          &:after
+            content: ''
+            display: block
+            position: absolute
+            bottom: 0
+            width: 100%
+            height: 5px
+            z-index: 1
+            +tr
+            background: $relief-blue
+          &:before
+            content: ''
+            position: absolute
+            top: 0
+            width: 100%
+            height: 100%
+            background: $relief-blue
+            display: block
+            z-index: 1
+            opacity: 0
+            +tr
+      &__
+        &image
+          width: 100%
+          object-fit: cover
+          height: auto
+          max-height: 250px
+          display: block
+
+.slick
+  &-
+    &button
+      position: absolute
+      top: 50%
+      transform: translateX(-50%)
+      +pointer
+      +tr
+      +mq-xl
+        top: 65%
+      &-- 
+        &prev
+          left: 0
+          transform: rotate(180deg)
+        &next
+          right: -10px
+      &:hover
+        opacity: 0.4
+    &disabled
+      pointer-events: none
+      path
+        fill: $relief-gray
+    &slide > div
+      display: flex
+      justify-content: center
+    &slide
+      +mq-sm
+        margin: 0 15px
+    &list
+      +mq-sm  
+        margin: 0 -15px
