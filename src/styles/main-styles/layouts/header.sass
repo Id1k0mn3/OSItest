@@ -1,0 +1,53 @@
+.header-wrapper
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 1
+.header
+  &--
+    &mobile
+      display: none
+      +mq-till-xl
+        display: block
+    &desctop
+      +mq-till-xl
+        display: none
+
+.menu
+  &--
+    &mobile
+      background: rgba(1, 161, 221, 0.7)
+      width: 80%
+      position: absolute
+      left: -100%
+      top: 0
+      transition: 0.3s
+      height: 100vh
+      +mq-sm
+        width: 400px
+    &desctop
+      display: flex
+    &active
+      transition: 0.3s
+      left: 0
+  &__
+    &item
+      list-style-type: none
+      position: relative
+      &:not(:first-child)
+        +mq-xl
+          margin-left: 40px
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        height: 90%
+        width: 2px
+        border-radius: 1px
+        background: $relief-blue
+        opacity: 0
+        left: -10px
+        +tr
+      &:hover:before
+        opacity: 1
+        +tr

@@ -1,0 +1,28 @@
+.el
+  &--
+    &m
+      &_
+        @each $size, $value in $type-page-indent_group
+          &r_#{$size}
+            +mq-both-adaptive
+              margin-right: $value
+          &t_#{$size}
+            +mq-both-adaptive
+              margin-top: $value
+          &l_#{$size}
+            +mq-both-adaptive
+              margin-left: $value
+          &b_#{$size}
+            +mq-both-adaptive
+              margin-bottom: $value
+          &f_#{$size}
+            +mq-both-adaptive
+              margin: $value
+          &h_#{$size}
+            +mq-both-adaptive
+              margin-top: $value
+              margin-bottom: $value
+          &v_#{$size}
+            +mq-both-adaptive
+              margin-right: $value
+              margin-left: $value

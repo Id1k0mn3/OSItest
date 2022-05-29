@@ -1,0 +1,50 @@
+// font-size
+$type-font-size-1xs: 10px;
+$type-font-size-2xs: 12px;
+$type-font-size-1sm: 13px;
+$type-font-size-2sm: 14px;
+$type-font-size-1md: 18px;
+$type-font-size-2md: 20px;
+$type-font-size-lg: 22px;
+$type-font-size-2lg: 30px;
+$type-font-size-xl: 40px;
+$type-font-size-2xl: 60px;
+
+$type-font-size-map: ();
+$type-font-size-map: map-merge($type-font-size-map, ('1xs': $type-font-size-1xs));
+$type-font-size-map: map-merge($type-font-size-map, ('2xs': $type-font-size-2xs));
+$type-font-size-map: map-merge($type-font-size-map, ('1sm': $type-font-size-1sm));
+$type-font-size-map: map-merge($type-font-size-map, ('2sm': $type-font-size-2sm));
+$type-font-size-map: map-merge($type-font-size-map, ('1md': $type-font-size-1md));
+$type-font-size-map: map-merge($type-font-size-map, ('2md': $type-font-size-2md));
+$type-font-size-map: map-merge($type-font-size-map, ('lg': $type-font-size-lg));
+$type-font-size-map: map-merge($type-font-size-map, ('2lg': $type-font-size-lg));
+$type-font-size-map: map-merge($type-font-size-map, ('xl': $type-font-size-xl));
+$type-font-size-map: map-merge($type-font-size-map, ('xl': $type-font-size-2xl));
+
+// colors
+$text-1: #000000 !default;
+$text-2: #FFFFFF !default;
+$text-3: #01A1DD !default;
+
+$color-group: () !default;
+$color-group: append($color-group, ('black', $text-1));
+$color-group: append($color-group, ('white', $text-2));
+$color-group: append($color-group, ('blue', $text-3));
+
+// weight of font
+$weight-1: 300;
+$weight-2: 400;
+$weight-3: 500;
+$weight-4: 700;
+
+$weight-group: () !default;
+$weight-group: append($weight-group, ('300', $weight-1));
+$weight-group: append($weight-group, ('400', $weight-2));
+$weight-group: append($weight-group, ('500', $weight-3));
+$weight-group: append($weight-group, ('700', $weight-4));
+
+// relief
+$relief-black: $text-1;
+$relief-white: $text-2;
+$relief-blue: $text-3;

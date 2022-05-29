@@ -1,10 +1,35 @@
 {% extends "layouts/base.html" %}
-
+{% import "./macro/service.html" as service %}
+{% set services = [{title: 'Data sience', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.'}, {title: 'Data sience', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.'}, {title: 'Data sience', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.'}, {title: 'Data sience', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.'}] %}
 {% block content %}
-  <ul>
-    {% for item in [1, 2, 3, 5, 6, 2] %}
-    <li>{{ item }}</li>
-    {% endfor %}
-  </ul>
-  <img src="@img/test.png" alt="">
+  <section class="searching">
+    <img class="searching__img" src="@img/img-header.jpg" alt="hands and notebook">
+    <div class="searching-form-wrapper el--p_v_5 el--p_v_none-md">
+      <form class="searching-form el--p_t_4 el--p_b_3 el--p_r_4 el--p_l_4 el--p_t_5-md el--p_b_5-md el--p_r_10-md el--p_l_10-md" action="post">
+        <input class="searching-form__input" type="text" placeholder="Place your text here">
+        <img class="searching-form__icon" src="@img/search.svg" alt="hands and notebook">
+      </form>
+    </div>
+    <div class="searching-arrow-down">
+      <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.89844 17.2188C7.09375 17.4141 7.36719 17.4141 7.5625 17.2188L13.3438 11.4766C13.5391 11.3203 13.5391 11.0078 13.3438 10.8125L12.5625 10.0703C12.4062 9.875 12.0938 9.875 11.8984 10.0703L7.25 14.6797L2.5625 10.0703C2.36719 9.875 2.09375 9.875 1.89844 10.0703L1.11719 10.8125C0.921875 11.0078 0.921875 11.3203 1.11719 11.4766L6.89844 17.2188ZM7.5625 10.9688L13.3438 5.22656C13.5391 5.07031 13.5391 4.75781 13.3438 4.5625L12.5625 3.82031C12.4062 3.625 12.0938 3.625 11.8984 3.82031L7.25 8.42969L2.5625 3.82031C2.36719 3.625 2.09375 3.625 1.89844 3.82031L1.11719 4.5625C0.921875 4.75781 0.921875 5.07031 1.11719 5.22656L6.89844 10.9688C7.09375 11.1641 7.36719 11.1641 7.5625 10.9688Z" fill="white"/>
+        </svg>        
+    </div>
+  </section>
+  <section class="services el--p_t_10">
+    <div class="container container--variant_tiny">
+      <div class="el--p_t_7-xl el--p_t_3-md el--p_t_1-md">
+        <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Services</h1>
+        <div class="el--p_t_1-md">
+          <p class="text text--c_blue text--ta_center text--size_1sm text--size_1md-md text--w_500">Services that we provide.</p>
+        </div>
+        <div class="services-wrapper el--p_h_5 el--p_h_none-md">
+          {% for item in services %}
+            {{ service.serviceBlock(item.title, item.description) }}
+          {%endfor%}
+        </div>
+        <!-- <div>{{serviceModule|e}}</div> -->
+      </div>
+    </div>
+  </section>
 {% endblock %}

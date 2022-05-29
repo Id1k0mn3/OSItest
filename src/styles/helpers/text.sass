@@ -1,0 +1,68 @@
+.text
+  font-family: 'Poppins', sans-serif
+  &--
+    &size_
+      @each $size, $value in $type-font-size-map
+        &#{$size}
+          +mq-adaptive
+            font-size: #{$value}  
+    @each $color, $value in $color-group
+      &c_#{$color}
+        color: #{$value}  
+    @each $weight, $value in $weight-group
+      &w_#{$weight}
+        +mq-adaptive  
+          font-weight: #{$value}
+    &decoration
+      &_
+        &none
+          text-decoration: none
+        &element
+          display: flex
+          align-items: flex-end
+          &:after
+            content: ''
+            display: block
+            border-radius: 50%
+            width: 6px
+            height: 6px
+            background: $relief-blue
+            margin-bottom: 3px
+            margin-left: 4px
+            +mq-md
+              width: 10px
+              height: 10px
+            +mq-xl
+              width: 14px
+              height: 14px
+              margin-left: 10px
+              margin-bottom: 9px
+          &-
+            &main
+              display: flex
+              align-items: flex-end
+              justify-content: center
+              &:after
+                width: 8px
+                height: 8px
+                margin-bottom: 10px
+                margin-left: 4px
+                @extend .text--decoration_element
+                +mq-md
+                  width: 10px
+                  height: 10px
+                +mq-xl
+                  width: 14px
+                  height: 14px
+                  margin-left: 10px
+
+    &pointer
+      cursor: pointer
+    &ta_
+      &center
+        +mq-adaptive
+          text-align: center
+    &tr_
+      &uppercase
+        +mq-adaptive
+          text-transform: uppercase

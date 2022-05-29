@@ -1,0 +1,15 @@
+.row
+  display: flex
+  flex-wrap: wrap
+  &--
+    &justify_  
+      &between
+        +mq-both-adaptive
+          justify-content: space-between
+      &aroun
+        +mq-both-adaptive
+          justify-content: space-around
+    &align_
+      &center
+        +mq-both-adaptive
+          align-items: center

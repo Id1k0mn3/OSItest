@@ -1,2 +1,61 @@
-header
-  background: red
+.searching
+  position: relative
+  &__
+    &img
+      width: 100%
+      height: auto
+      max-height: 650px
+      object-fit: cover
+  &-
+    &form
+      background: $relief-white
+      position: relative
+      &__
+        &input
+          width: 100%
+          outline: none
+          padding-bottom: 10px
+          border: none
+          border-bottom: 1px solid $relief-black
+          font-style: italic
+          @extend .text--size_1xs
+          @extend .text--w_400
+          min-height: 24px
+          +mq-md
+            font-size: 14px
+          &::placeholder
+            font-style: italic
+            @extend .text--size_1xs
+            @extend .text--w_300
+            font-size: 14px
+        &icon
+          position: absolute
+          right: 20px
+          +mq-md  
+            right: 40px
+      &-
+        &wrapper
+          position: absolute
+          bottom: 30px
+          left: 50%
+          transform: translate(-50%)
+          max-width: 656px
+          width: 100%
+          +mq-md
+            bottom: 55px
+          +mq-xl
+            bottom: 80px
+    &arrow-down
+      position: absolute
+      bottom: 15px
+      left: 50%
+      transform: translate(-50%)
+      @extend .text--pointer
+      +mq-till-xl
+        display: none
+      path
+        +tr
+      &:hover
+        path
+          +tr
+          fill: $text-3

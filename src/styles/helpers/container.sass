@@ -1,0 +1,25 @@
+.container
+  margin: 0 auto
+  &--
+    &fit_
+      &sm-sm
+        +mq-sm
+          max-width: $mq-size-sm
+    &fit_
+      &md-md
+        +mq-md
+          max-width: $mq-size-md
+    &fit_
+      &lg-lg
+        +mq-lg
+          max-width: $mq-size-lg
+    &fit_
+      &xl-xl
+        +mq-xl
+          max-width: $mq-size-xl
+    &variant_
+      &tiny
+        @extend .container--fit_sm-sm
+        @extend .container--fit_md-md
+        @extend .container--fit_lg-lg
+        @extend .container--fit_xl-xl
