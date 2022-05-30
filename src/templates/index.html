@@ -3,6 +3,7 @@
 {% set services = [{title: 'Data sience', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.'}, {title: 'Data sience', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.'}, {title: 'Data sience', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.'}, {title: 'Data sience', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.'}] %}
 {% set news = [{title: 'Data sience', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', link: '#', img: '@img/news.jpg'}, {title: 'Data sience', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', link: '#', img: '@img/news.jpg'}, {title: 'Data sience', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', link: '#', img: '@img/news.jpg'}, {title: 'Data sience', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', link: '#', img: '@img/news.jpg'}] %}
 {% set events = [{title: 'IKEA presentation of furniture', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', date: '10th September / 4pm', place: 'HC Hall, Kyiv',  link: '#', img: '@img/news.jpg'}, {title: 'IKEA presentation of furniture', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', date: '10th September / 4pm', place: 'HC Hall, Kyiv',  link: '#', img: '@img/news.jpg'},{title: 'IKEA presentation of furniture', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', date: '10th September / 4pm', place: 'HC Hall, Kyiv',  link: '#', img: '@img/news.jpg'}, {title: 'IKEA presentation of furniture', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', date: '10th September / 4pm', place: 'HC Hall, Kyiv',  link: '#', img: '@img/news.jpg'}, {title: 'IKEA presentation of furniture', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', date: '10th September / 4pm', place: 'HC Hall, Kyiv',  link: '#', img: '@img/news.jpg'}] %}
+{% set works = [{title: 'REVIEWAL', type: 'project', date: '6 nov. 2020',  link: '#', img: '@img/news.jpg'}, {title: 'REVIEWAL', type: 'project', date: '6 nov. 2020',  link: '#', img: '@img/news.jpg'}, {title: 'REVIEWAL', type: 'project', date: '6 nov. 2020',  link: '#', img: '@img/news.jpg'}, {title: 'REVIEWAL', type: 'project', date: '6 nov. 2020',  link: '#', img: '@img/news.jpg'}] %}
 {% block content %}
   <section class="searching">
     <img class="searching__img" src="@img/img-header.jpg" alt="hands and notebook">
@@ -18,7 +19,7 @@
         </svg>        
     </div>
   </section>
-  <section class="services el--p_t_10">
+  <section class="services el--p_t_8">
     <div class="container container--variant_tiny">
       <div class="el--p_t_7-xl el--p_t_3-md el--p_t_1-md">
         <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Services</h1>
@@ -39,7 +40,7 @@
       </div>
     </div>
   </section>
-  <section class="news el--p_t_10">
+  <section class="news el--p_t_8">
     <div class="container container--variant_tiny rel">
       <div class="el--p_t_7-xl el--p_t_3-md el--p_t_1-md">
         <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Latest news</h1>
@@ -68,7 +69,7 @@
       </button>
     </div>
   </section>
-  <section class="news el--p_t_10">
+  <section class="events el--p_t_9">
     <div class="container container--variant_tiny">
       <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Services</h1>
       <div class="el--p_t_1-md">
@@ -115,5 +116,18 @@
         </div>
       </div>
     </div>
+  </section>
+  <section class="works el--p_t_2">
+    <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Services</h1>
+    <div class="el--p_t_1-md">
+      <p class="text text--c_blue text--ta_center text--size_1sm text--size_1md-md text--w_500">Services that we provide.</p>
+    </div>
+    <div class="works-wrapper el--p_t_6">
+      <div class="row row--justify_center">
+        {% for item in works %}
+          {{ macro.workBlock(item.img, item.type, item.title, item.date, item.link) }}
+        {%endfor%}
+      </div>
+    </div>  
   </section>
 {% endblock %}

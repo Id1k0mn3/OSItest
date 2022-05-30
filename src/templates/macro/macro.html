@@ -46,3 +46,23 @@
   <h3 class="text text--w_500 text--c_black text--size text--size_2sm text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 event-small__title">{{ title }}</h3>
 </div>
 {% endmacro %}
+
+{% macro workBlock(img, type, title, date, link) %}
+<div class="cell_auto cell_3-xl cell_auto-fhd el--p_f_5-md">
+  <div class="work rel">
+    <img class="work__image" src="{{ img }}" alt="">
+    <div class="work-info">
+      <span class="work-info__type-event text text--size_standart text--w_300 text--ta_center text--c_white">{{ type }}</span>
+      <h3 class="work-info__type-event text text--size_3lg text--w_700 text--ta_center text--c_white text--tr_uppercase el--m_t_3">{{ title }}</h3>
+      <div class="work-info__line el--m_b_6 el--m_t_5"></div>
+      <span class="work-info__type-event text text--size_1xs text--w_300 text--ta_center text--c_white">{{ date }}</span>
+      <div class="el--m_t_10 el--p_t_2">
+        <a class="work-info__link text text--decoration_none text--hover_underline" href="{{ link }}">
+          <span class="work-info__link-text text text--size_1xs text--w_300 text--ta_center text--c_white text--st_italic">more info</span>
+          <span class="work-info__link-icon"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endmacro %}
