@@ -8,6 +8,8 @@
     &bg_
       &white
         background: $relief-white
+      &blue
+        background: $relief-blue
       &inherit
         background: inherit
     &br_
@@ -16,8 +18,14 @@
           &blue
             border: 1px solid $relief-blue
     &hover_
-      &oposite
-        &:hover
-          background: $relief-blue
-          @extend .text--c_white
-          box-shadow: 0px 3px 20px #01A1DD
+      &oposite-
+        &white
+          &:hover
+            background: $relief-blue
+            @extend .text--c_white
+            box-shadow: 0px 3px 20px #01A1DD
+        &blue
+          &:hover
+            background: $relief-white
+            @extend .text--c_blue
+            box-shadow: 0px 3px 20px #01A1DD

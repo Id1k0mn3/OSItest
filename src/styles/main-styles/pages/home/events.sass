@@ -4,9 +4,11 @@
       &__
         &image
           display: block
-          width: 100%
           height: auto
+          width: 100%
           object-fit: cover
+          +mq-till-sm
+            min-height: 380px
         &main-info
           position: absolute
           width: 100%
@@ -37,6 +39,8 @@
       &__
         &image
           @extend .event-big__image
+          +mq-till-sm
+            min-height: 220px
         &main-info
           position: absolute
           width: 100%
