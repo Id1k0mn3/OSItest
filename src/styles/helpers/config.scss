@@ -42,13 +42,15 @@ $color-group: append($color-group, ('blue', $text-3));
 $weight-1: 300;
 $weight-2: 400;
 $weight-3: 500;
-$weight-4: 700;
+$weight-4: 600;
+$weight-5: 700;
 
 $weight-group: () !default;
 $weight-group: append($weight-group, ('300', $weight-1));
 $weight-group: append($weight-group, ('400', $weight-2));
 $weight-group: append($weight-group, ('500', $weight-3));
-$weight-group: append($weight-group, ('700', $weight-4));
+$weight-group: append($weight-group, ('600', $weight-4));
+$weight-group: append($weight-group, ('700', $weight-5));
 
 // relief
 $relief-black: $text-1;
