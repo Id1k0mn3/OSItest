@@ -3,7 +3,7 @@ import slick from 'slick-carousel'
 
 export function slider() {
   console.log($)
-  $('.slider').slick({
+  $('.js-slider').slick({
     slidesToShow: 3,
     arrows: true,
     infinite: false,

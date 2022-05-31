@@ -21,6 +21,7 @@
           @extend .text--size_1xs
           @extend .text--w_400
           min-height: 24px
+          +tr
           +mq-md
             font-size: 14px
           &::placeholder
@@ -28,6 +29,9 @@
             @extend .text--size_1xs
             @extend .text--w_300
             font-size: 14px
+          &:hover,
+          &:focus
+            border-color: $relief-blue
         &icon
           position: absolute
           right: 20px
@@ -51,8 +55,9 @@
       left: 50%
       transform: translate(-50%)
       @extend .text--pointer
-      +mq-till-xl
-        display: none
+      display: none
+      +mq-xl
+        display: block
       path
         +tr
       &:hover

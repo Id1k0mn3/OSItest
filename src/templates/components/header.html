@@ -4,19 +4,19 @@
   <div class='header header--mobile el--p_v_5 el--p_t_4 el--p_b_6 el--p_v_7-md el--p_t_6-md el--p_b_7-md'>
     <div class="container container--variant_tiny">
       <div class="row row--justify_between">
-        <div class="menu menu--mobile el--p_f_5 el--p_f_10-md" id="menu">
+        <ul class="js-menu menu menu--mobile el--p_f_5 el--p_f_10-md" id="js-menu">
           {% for item in menus %}
             <li class="menu__item el--m_b_3 el--m_b_5-md">
-              <a class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
+              <a href="#" class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
                 {{ item.title }}
               </a>
             </li>
           {% endfor %}
-        </div>
+        </ul>
         <div class="wrapper-logo">
           <a class="text text--w_700 text--size_1md text--size_2lg-md text--c_white text--decoration_element text--decoration_none" href="#">OSItest</a>
         </div>
-        <div class="wrapper-burger" id="burger">
+        <div class="js-wrapper-burger wrapper-burger" id="js-burger">
           <button class="burger">
             {% for item in [1, 2, 3] %}
               <span class="burger__line"></span>
@@ -29,32 +29,17 @@
   <div class="header header--desctop el--p_t_10">
     <div class="container container--variant_tiny">
       <div class="row row--justify_between row--align_center">
-        <h1 class="text text--size_xl text--c_white text--decoration_element">OSItest</h1>
-        <div class="menu menu--desctop">
+        <a href="#" class="text text--size_xl text--c_white text--decoration_element text--decoration_none">OSItest</a>
+        <ul class="menu menu--desctop">
           {% for item in menus %}
             <li class="menu__item">
-              <a class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
+              <a href="#" class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
                 {{ item.title }}
               </a>
             </li>
           {% endfor %}
-        </div>
+        </ul>
       </div>
     </div>  
   </div>
 </header>
-
-<!-- ul.menu>li.menu__item*10>a[href="#"].menu__link{Link $}
-
-<ul class="menu">
-  <li class="menu__item"><a href="#" class="menu__link">Link 1</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 2</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 3</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 4</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 5</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 6</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 7</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 8</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 9</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 10</a></li>
-</ul> -->

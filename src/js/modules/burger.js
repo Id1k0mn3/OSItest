@@ -1,6 +1,6 @@
-const burgerButton = document.getElementById('burger')
-const menu = document.getElementById('menu')
-const body = document.getElementById('body')
+const burgerButton = document.getElementById('js-burger')
+const menu = document.getElementById('js-menu')
+const body = document.getElementById('js-body')
 
 export function burger() {
   burgerButton.addEventListener('click', () => {

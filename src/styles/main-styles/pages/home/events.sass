@@ -7,8 +7,9 @@
           height: auto
           width: 100%
           object-fit: cover
-          +mq-till-sm
-            min-height: 380px
+          min-height: 380px
+          +mq-sm
+            min-height: inherit
         &main-info
           position: absolute
           width: 100%
@@ -16,6 +17,8 @@
           z-index: 2
           padding-bottom: 2px
           background: white
+        &title
+          display: block
       &-
         &wrapper
           @extend .news-block-wrapper
@@ -39,8 +42,9 @@
       &__
         &image
           @extend .event-big__image
-          +mq-till-sm
-            min-height: 220px
+          min-height: 220px
+          +mq-sm
+            min-height: inherit
         &main-info
           position: absolute
           width: 100%
@@ -48,6 +52,8 @@
           z-index: 2
           padding-bottom: 2px
           background: white
+        &title
+          display: block
       &-
         &wrapper
           @extend .news-block-wrapper

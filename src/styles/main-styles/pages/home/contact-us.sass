@@ -1,11 +1,16 @@
 .contact-us
   max-width: 800px
   width: 100%
+  padding: 0 20px
+  +mq-xl
+    padding: 0
 
 .submit-icon
   position: absolute
-  left: 15px
-  bottom: 20px
+  bottom: 23px
+  left: 63px
+  +mq-md  
+    left: 15px
   path
     +tr
 
@@ -13,3 +18,8 @@
   path
     fill: $relief-blue
     +tr
+
+.field-button
+  padding: 16px 60px 16px 83px
+  +mq-md
+    padding: 16px 16px 16px 36px

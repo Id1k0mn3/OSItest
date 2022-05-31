@@ -5,52 +5,58 @@
 {% set events = [{title: 'IKEA presentation of furniture', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', date: '10th September / 4pm', place: 'HC Hall, Kyiv',  link: '#', img: '@img/news.jpg'}, {title: 'IKEA presentation of furniture', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', date: '10th September / 4pm', place: 'HC Hall, Kyiv',  link: '#', img: '@img/news.jpg'},{title: 'IKEA presentation of furniture', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', date: '10th September / 4pm', place: 'HC Hall, Kyiv',  link: '#', img: '@img/news.jpg'}, {title: 'IKEA presentation of furniture', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', date: '10th September / 4pm', place: 'HC Hall, Kyiv',  link: '#', img: '@img/news.jpg'}, {title: 'IKEA presentation of furniture', description: 'Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.', date: '10th September / 4pm', place: 'HC Hall, Kyiv',  link: '#', img: '@img/news.jpg'}] %}
 {% set works = [{title: 'REVIEWAL', type: 'project', date: '6 nov. 2020',  link: '#', img: '@img/news.jpg'}, {title: 'REVIEWAL', type: 'project', date: '6 nov. 2020',  link: '#', img: '@img/news.jpg'}, {title: 'REVIEWAL', type: 'project', date: '6 nov. 2020',  link: '#', img: '@img/news.jpg'}, {title: 'REVIEWAL', type: 'project', date: '6 nov. 2020',  link: '#', img: '@img/news.jpg'}] %}
 {% block content %}
-  <section class="searching">
-    <img class="searching__img" src="@img/img-header.jpg" alt="hands and notebook">
+<main>
+  <div class="searching">
+    <img class="searching__img" src="@img/img-header.jpg" width="1600" height="650" alt="hands and notebook" loading="lazy">
     <div class="searching-form-wrapper el--p_v_5 el--p_v_none-md">
       <form class="searching-form el--p_t_4 el--p_b_3 el--p_r_4 el--p_l_4 el--p_t_5-md el--p_b_5-md el--p_r_10-md el--p_l_10-md" action="post">
-        <input class="searching-form__input" type="text" placeholder="Place your text here">
-        <img class="searching-form__icon" src="@img/search.svg" alt="hands and notebook">
+        <input class="searching-form__input" type="text" placeholder="Place your text here" aria-label="Search">
+        <img class="searching-form__icon" src="@img/search.svg" alt="icon search">
       </form>
     </div>
     <div class="searching-arrow-down">
       <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6.89844 17.2188C7.09375 17.4141 7.36719 17.4141 7.5625 17.2188L13.3438 11.4766C13.5391 11.3203 13.5391 11.0078 13.3438 10.8125L12.5625 10.0703C12.4062 9.875 12.0938 9.875 11.8984 10.0703L7.25 14.6797L2.5625 10.0703C2.36719 9.875 2.09375 9.875 1.89844 10.0703L1.11719 10.8125C0.921875 11.0078 0.921875 11.3203 1.11719 11.4766L6.89844 17.2188ZM7.5625 10.9688L13.3438 5.22656C13.5391 5.07031 13.5391 4.75781 13.3438 4.5625L12.5625 3.82031C12.4062 3.625 12.0938 3.625 11.8984 3.82031L7.25 8.42969L2.5625 3.82031C2.36719 3.625 2.09375 3.625 1.89844 3.82031L1.11719 4.5625C0.921875 4.75781 0.921875 5.07031 1.11719 5.22656L6.89844 10.9688C7.09375 11.1641 7.36719 11.1641 7.5625 10.9688Z" fill="white"/>
-        </svg>        
+      </svg>        
     </div>
-  </section>
+  </div>
   <section class="services el--p_t_8">
     <div class="container container--variant_tiny">
       <div class="el--p_t_7-xl el--p_t_3-md el--p_t_1-md">
-        <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Services</h1>
+        <h2 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">
+          <span>Services</span>
+          <span class="text text--c_blue text--decorate_helper">.</span>
+        </h2>
         <div class="el--p_t_1-md">
           <p class="text text--c_blue text--ta_center text--size_1sm text--size_1md-md text--w_500">Services that we provide.</p>
         </div>
-        <div class="services-wrapper el--p_v_5 el--p_v_none-md el--m_h_4 el--m_h_6-md el--m_h_8-xl"">
+        <div class="services-wrapper el--p_v_5 el--p_v_none-md el--m_h_4 el--m_h_6-md el--m_h_8-xl">
           {% for item in services %}
             <div class="cell_12 cell_5-sm cell_3-lg cell_auto-xl el--p_h_2 el--p_f_2-sm">
-              {{ macro.serviceBlock(item.title, item.description) }}
+              {{ macro.serviceBlock(item.title, item.description, loop.index) }}
             </div>
           {%endfor%}
         </div>
         <div class="row row--justify_center">
           <a href="#" class='button button--bg_white button--br_1_blue button--c_blue button--hover_oposite-white el--p_h_3 el--p_v_5 el--p_h_4 el--p_v_9 text text--c_blue text--tr_uppercase'>find more</a>
         </div>
-        <!-- <div>{{serviceModule|e}}</div> -->
       </div>
     </div>
   </section>
-  <section class="news el--p_t_8">
+    <section class="news el--p_t_8">
     <div class="container container--variant_tiny rel">
       <div class="el--p_t_7-xl el--p_t_3-md el--p_t_1-md">
-        <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Latest news</h1>
+        <h2 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">
+          <span>Latest news</span>
+          <span class="text text--c_blue text--decorate_helper">.</span>
+        </h2>
         <div class="el--p_t_1-md">
           <p class="text text--c_blue text--ta_center text--size_1sm text--size_1md-md text--w_500">Check out some of our news.</p>
         </div>
       </div>
       <div class="el--m_t_6 el--m_t_8-md el--m_t_10-xl el--p_v_8">
         <div class="el--p_v_4-xl">
-          <div class="slider">
+          <div class="js-slider">
             {% for item in news %}
               {{ macro.newsBlock(item.title, item.description, item.img, item.link) }}
             {%endfor%}
@@ -71,18 +77,21 @@
   </section>
   <section class="events el--p_t_9">
     <div class="container container--variant_tiny">
-      <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Services</h1>
-      <div class="el--p_t_1-md">
+      <h2 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">
+        <span>Upcoming events</span>
+        <span class="text text--c_blue text--decorate_helper">.</span>
+      </h2>
+      <div class="el--p_t_1">
         <p class="text text--c_blue text--ta_center text--size_1sm text--size_1md-md text--w_500">Services that we provide.</p>
       </div>
-      <div class="events-wrapper el--m_h_4 el--m_h_6-md el--m_h_8-xl"">
+      <div class="events-wrapper el--m_h_4 el--m_h_6-md el--m_h_8-xl">
         <div class="row row--justify_center row--justify_between-md">
           <div class="cell_12 cell_5-md">
             {% for item in events %}
               {% if loop.first %}
-                <div class="event-big el--p_t_2-till-xl">
+                <div class="event-big el--p_t_2 el--p_t_none-xl">
                   <div class="event-big-wrapper rel">
-                    <img class="event-big__image" src="{{ item.img }}" alt="image of news" width="200" height="300">
+                    <img class="event-big__image" src="{{ item.img }}" alt="image of big event" width="495" height="385" loading="lazy">
                     <div class="event-big__main-info el--p_t_1 el--p_v_4 el--p_v_5-md">
                       <div class="row row--justify_between">
                         <div class="cell_auto">
@@ -94,14 +103,14 @@
                       </div>
                     </div>
                   </div>
-                  <h3 class="text text--w_500 text--c_black text--size text--size_lg text--size_2lg-md text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2  event-big__title">{{ item.title }}</h3>
+                  <a href="#" class="text text--w_500 text--c_black text--size text--size_lg text--size_2lg-md text--ta_center text--tr_0-3 text--decoration_none el--p_b_1 el--p_t_2  event-big__title">{{ item.title }}</a>
                   <p class="text text--c_black text--size_2sm text--size_standart-md text--lh_18 text--lh_22-md text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 el--p_t_none-md el--p_v_5 news-block__title">{{ item.description }}</p>
                 </div>
               {% endif %}
             {% endfor %}
           </div>
           <div class="cell_12 cell_7-md">
-            <div class="events-small el--p_v_3-till-sm">
+            <div class="events-small el--p_v_3 el--p_v_none-sm">
               <div class="row row--justify_center row--justify_between-sm">
                 {% for item in events %}  
                   {% if not loop.first %}
@@ -118,7 +127,10 @@
     </div>
   </section>
   <section class="works el--p_t_2">
-    <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Services</h1>
+    <h2 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">
+      <span>Our works</span>
+      <span class="text text--c_blue text--decorate_helper">.</span>
+    </h2>
     <div class="el--p_t_1-md">
       <p class="text text--c_blue text--ta_center text--size_1sm text--size_1md-md text--w_500">Services that we provide.</p>
     </div>
@@ -131,45 +143,48 @@
     </div>  
   </section>
   <section class="contact el--p_t_10">
-    <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Contact us</h1>
+    <h2 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">
+      <span>Contact us</span>
+      <span class="text text--c_blue text--decorate_helper">.</span>
+    </h2>
     <div class="el--p_t_1-md">
       <p class="text text--c_blue text--ta_center text--size_1sm text--size_1md-md text--w_500">Connect to our space team.</p>
     </div>
     <div class="contact-wrapper el--p_t_6">
       <div class="row row--justify_center">
         <form class="contact-us el--p_v_5-till-xl" method="post" autocomplete="off">
-          <div class="row row--direction_column row--align_end">
+          <div class="row row--direction_column row--align_center row--align_end-md">
             <div class="cell_12 el--m_b_4 el--m_b_5-md">
               <div class="row row--justify_between row--align_center">
                 <label for="name" class="text text--size_3sm text--size_2md-md text--c_black">Your name</label>
                 <span class="text text--size_1xs text--size_2xs-md text--c_blue">required</span>
               </div>
-              <input type="text" id="name" class="field field--typical field--br_gray field--bg_white el--m_t_1 el--m_t_2-md">
+              <input type="text" id="name" class="field field--typical field--br_gray field--bg_white field--hover el--m_t_1 el--m_t_2-md">
             </div>
             <div class="cell_12 el--m_b_4 el--m_b_5-md">
               <div class="row row--justify_between row--align_center">
                 <label for="email" class="text text--size_3sm text--size_2md-md text--c_black">Your email</label>
                 <span class="text text--size_1xs text--size_2xs-md text--c_blue">required</span>
               </div>
-              <input type="text" id="email" class="field field--typical field--br_gray field--bg_white el--m_t_1 el--m_t_2-md">
+              <input type="email" id="email" class="field field--typical field--br_gray field--bg_white field--hover el--m_t_1 el--m_t_2-md">
             </div>
             <div class="cell_12 el--m_b_4 el--m_b_5-md">
               <div class="row row--justify_between row--align_center">
                 <label for="message" class="text text--size_3sm text--size_2md-md text--c_black">Text additional</label>
                 <span class="text text--size_1xs text--size_2xs-md text--c_blue">required</span>
               </div>
-              <textarea name="message" id="message" class="field field--br_gray field--bg_white field--area el--m_t_1 el--m_t_2-md"></textarea>
+              <textarea name="message" id="message" class="field field--br_gray field--bg_white field--area field--hover el--m_t_1 el--m_t_2-md"></textarea>
             </div>
             <div class="cell_auto rel">
-              <input type="submit" value="Save" class="button button--bg_blue button--br_1_blue button--c_blue button--hover_oposite-blue text text--c_white text--tr_uppercase text--w_500 el--p_h_4 el--p_r_4 el--p_l_9 pointer field-button">
+              <input type="submit" aria-label="Submit" value="Save" class="button button--bg_blue button--br_1_blue button--c_blue button--hover_oposite-blue text text--c_white text--tr_uppercase text--w_500 el--p_h_4 el--p_r_4 el--p_l_9 pointer field-button">
               <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="submit-icon">
                 <path d="M12.7441 0.335938L5.03906 8.04102L2.22656 5.19922C2.08008 5.08203 1.8457 5.08203 1.72852 5.19922L0.878906 6.04883C0.761719 6.16602 0.761719 6.40039 0.878906 6.54688L4.80469 10.4434C4.95117 10.5898 5.15625 10.5898 5.30273 10.4434L14.0918 1.6543C14.209 1.53711 14.209 1.30273 14.0918 1.15625L13.2422 0.335938C13.125 0.189453 12.8906 0.189453 12.7441 0.335938Z" fill="white"/>
               </svg>
-                
             </div>
           </div>
         </form>
       </div>
     </div>  
   </section>
+</main>  
 {% endblock %}

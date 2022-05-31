@@ -1,59 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OSItest">
   <title>Document</title>
+  <link rel="icon" type="image/png" href="img/favicon-16x16">
+  <link rel="apple-touch-icon" href="img/mstile-150x150.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;1,500&display=swap&_v=20220531115717" rel="stylesheet">
-  <link rel="stylesheet" href=css/styles.min.css?_v=20220531115717">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;1,500&display=swap&_v=20220531225414" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.min.css?_v=20220531225414">
 </head>
-<body id="body">
+<body id="js-body">
   
 <header class="header-wrapper">
   <div class="overlay"></div>
   <div class='header header--mobile el--p_v_5 el--p_t_4 el--p_b_6 el--p_v_7-md el--p_t_6-md el--p_b_7-md'>
     <div class="container container--variant_tiny">
       <div class="row row--justify_between">
-        <div class="menu menu--mobile el--p_f_5 el--p_f_10-md" id="menu">
+        <ul class="js-menu menu menu--mobile el--p_f_5 el--p_f_10-md" id="js-menu">
           
             <li class="menu__item el--m_b_3 el--m_b_5-md">
-              <a class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
+              <a href="#" class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
                 News
               </a>
             </li>
           
             <li class="menu__item el--m_b_3 el--m_b_5-md">
-              <a class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
+              <a href="#" class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
                 Events
               </a>
             </li>
           
             <li class="menu__item el--m_b_3 el--m_b_5-md">
-              <a class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
+              <a href="#" class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
                 Gallery
               </a>
             </li>
           
             <li class="menu__item el--m_b_3 el--m_b_5-md">
-              <a class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
+              <a href="#" class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
                 About
               </a>
             </li>
           
             <li class="menu__item el--m_b_3 el--m_b_5-md">
-              <a class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
+              <a href="#" class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
                 Contact
               </a>
             </li>
           
-        </div>
+        </ul>
         <div class="wrapper-logo">
           <a class="text text--w_700 text--size_1md text--size_2lg-md text--c_white text--decoration_element text--decoration_none" href="#">OSItest</a>
         </div>
-        <div class="wrapper-burger" id="burger">
+        <div class="js-wrapper-burger wrapper-burger" id="js-burger">
           <button class="burger">
             
               <span class="burger__line"></span>
@@ -70,93 +73,82 @@
   <div class="header header--desctop el--p_t_10">
     <div class="container container--variant_tiny">
       <div class="row row--justify_between row--align_center">
-        <h1 class="text text--size_xl text--c_white text--decoration_element">OSItest</h1>
-        <div class="menu menu--desctop">
+        <a href="#" class="text text--size_xl text--c_white text--decoration_element text--decoration_none">OSItest</a>
+        <ul class="menu menu--desctop">
           
             <li class="menu__item">
-              <a class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
+              <a href="#" class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
                 News
               </a>
             </li>
           
             <li class="menu__item">
-              <a class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
+              <a href="#" class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
                 Events
               </a>
             </li>
           
             <li class="menu__item">
-              <a class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
+              <a href="#" class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
                 Gallery
               </a>
             </li>
           
             <li class="menu__item">
-              <a class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
+              <a href="#" class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
                 About
               </a>
             </li>
           
             <li class="menu__item">
-              <a class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
+              <a href="#" class="menu__link text text--size_2md text--c_white text--decoration_none text--pointer">
                 Contact
               </a>
             </li>
           
-        </div>
+        </ul>
       </div>
     </div>  
   </div>
 </header>
 
-<!-- ul.menu>li.menu__item*10>a[href="#"].menu__link{Link $}
-
-<ul class="menu">
-  <li class="menu__item"><a href="#" class="menu__link">Link 1</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 2</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 3</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 4</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 5</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 6</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 7</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 8</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 9</a></li>
-  <li class="menu__item"><a href="#" class="menu__link">Link 10</a></li>
-</ul> -->
-
   
-  <section class="searching">
-    <picture><source srcset="img/img-header.webp" type="image/webp"><img class="searching__img" src="img/img-header.jpg" alt="hands and notebook"></picture>
+<main>
+  <div class="searching">
+    <picture><source srcset="img/img-header.webp" type="image/webp"><img class="searching__img" src="img/img-header.jpg" width="1600" height="650" alt="hands and notebook" loading="lazy"></picture>
     <div class="searching-form-wrapper el--p_v_5 el--p_v_none-md">
       <form class="searching-form el--p_t_4 el--p_b_3 el--p_r_4 el--p_l_4 el--p_t_5-md el--p_b_5-md el--p_r_10-md el--p_l_10-md" action="post">
-        <input class="searching-form__input" type="text" placeholder="Place your text here">
-        <img class="searching-form__icon" src="img/search.svg" alt="hands and notebook">
+        <input class="searching-form__input" type="text" placeholder="Place your text here" aria-label="Search">
+        <img class="searching-form__icon" src="img/search.svg" alt="icon search">
       </form>
     </div>
     <div class="searching-arrow-down">
       <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6.89844 17.2188C7.09375 17.4141 7.36719 17.4141 7.5625 17.2188L13.3438 11.4766C13.5391 11.3203 13.5391 11.0078 13.3438 10.8125L12.5625 10.0703C12.4062 9.875 12.0938 9.875 11.8984 10.0703L7.25 14.6797L2.5625 10.0703C2.36719 9.875 2.09375 9.875 1.89844 10.0703L1.11719 10.8125C0.921875 11.0078 0.921875 11.3203 1.11719 11.4766L6.89844 17.2188ZM7.5625 10.9688L13.3438 5.22656C13.5391 5.07031 13.5391 4.75781 13.3438 4.5625L12.5625 3.82031C12.4062 3.625 12.0938 3.625 11.8984 3.82031L7.25 8.42969L2.5625 3.82031C2.36719 3.625 2.09375 3.625 1.89844 3.82031L1.11719 4.5625C0.921875 4.75781 0.921875 5.07031 1.11719 5.22656L6.89844 10.9688C7.09375 11.1641 7.36719 11.1641 7.5625 10.9688Z" fill="white"/>
-        </svg>        
+      </svg>        
     </div>
-  </section>
+  </div>
   <section class="services el--p_t_8">
     <div class="container container--variant_tiny">
       <div class="el--p_t_7-xl el--p_t_3-md el--p_t_1-md">
-        <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Services</h1>
+        <h2 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">
+          <span>Services</span>
+          <span class="text text--c_blue text--decorate_helper">.</span>
+        </h2>
         <div class="el--p_t_1-md">
           <p class="text text--c_blue text--ta_center text--size_1sm text--size_1md-md text--w_500">Services that we provide.</p>
         </div>
-        <div class="services-wrapper el--p_v_5 el--p_v_none-md el--m_h_4 el--m_h_6-md el--m_h_8-xl"">
+        <div class="services-wrapper el--p_v_5 el--p_v_none-md el--m_h_4 el--m_h_6-md el--m_h_8-xl">
           
             <div class="cell_12 cell_5-sm cell_3-lg cell_auto-xl el--p_h_2 el--p_f_2-sm">
               
 <div class="service el--p_f_7">
   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_2_55)">
+    <g clip-path="url(#clip0_2_55)1">
       <path d="M47.9174 22.9158H37.0505C37.2713 21.847 37.4047 20.7137 37.4047 19.5074C37.4047 12.7967 31.7025 6.30275 31.4608 6.02989C31.194 5.73193 30.7837 5.61113 30.392 5.72158C30.0087 5.83204 29.719 6.1549 29.6544 6.55081L29.0399 10.2342C27.9878 7.23208 26.1168 3.37981 22.8792 0.288104C22.5397 -0.0348561 22.0271 -0.0911079 21.6271 0.144349C21.2229 0.383908 21.0292 0.861072 21.1521 1.31314C21.9188 4.16323 21.0146 8.78418 20.0333 12.3968C19.7604 10.6488 19.2708 9.16339 18.425 8.66543C18.1042 8.47587 17.7041 8.47372 17.3791 8.65918C17.0541 8.84463 16.8541 9.19044 16.8541 9.56341C16.8541 11.0947 16.0728 12.5073 15.1686 14.1448C13.9623 16.3303 12.5935 18.8095 12.5935 22.3471C12.5935 22.5451 12.6227 22.7242 12.631 22.9159H2.08263C1.50761 22.9159 1.04089 23.3826 1.04089 23.9576V48.9584C1.04089 49.5335 1.50761 50.0002 2.08263 50.0002H47.9174C48.4925 50.0002 48.9592 49.5335 48.9592 48.9584V23.9576C48.9592 23.3825 48.4925 22.9158 47.9174 22.9158ZM40.6256 24.9992V31.2494H32.3107C33.9649 29.8243 35.5275 27.6993 36.4775 24.9992H40.6256ZM16.9936 15.1488C17.3623 14.4843 17.7206 13.8342 18.0269 13.1758C18.1977 14.5696 18.2957 16.3259 18.2749 18.0718C18.2686 18.5781 18.6269 19.0135 19.1228 19.1073C19.6271 19.2031 20.1104 18.926 20.2916 18.4552C20.4416 18.0552 23.4125 10.1549 23.5125 4.13598C27.3439 9.2382 28.221 15.3134 28.2314 15.3843C28.3002 15.8948 28.7335 16.2781 29.2482 16.2843C29.7294 16.2718 30.2065 15.9239 30.2899 15.4156L31.3191 9.2424C32.9254 11.5092 35.3213 15.5551 35.3213 19.5073C35.3213 27.2117 29.7628 31.2494 27.8398 31.2494H22.2937C21.3645 30.9931 14.6789 28.918 14.6789 22.3449C14.6788 19.3427 15.856 17.2114 16.9936 15.1488ZM32.2919 33.3328V39.583H17.7081V33.3328H22.1583H27.8397H32.2919ZM9.37457 24.9992H12.9267C13.6747 27.9763 15.6081 29.966 17.5019 31.2494H9.37457V24.9992ZM3.12436 24.9992H7.2912V31.2494H3.12436V24.9992ZM3.12436 33.3328H15.6248V39.583H3.12436V33.3328ZM7.2911 47.9166H3.12436V41.6664H7.2912V47.9166H7.2911ZM23.9584 47.9166H9.37457V41.6664H23.9584V47.9166ZM40.6256 47.9166H26.0417V41.6664H40.6255V47.9166H40.6256ZM46.8758 47.9166H42.709V41.6664H46.8758V47.9166ZM46.8758 39.583H34.3754V33.3328H46.8758V39.583ZM46.8758 31.2494H42.709V24.9992H46.8758V31.2494Z" fill="#01A1DD" class='text--tr_0-3'/>
     </g>
     <defs>
-      <clipPath id="clip0_2_55">
+      <clipPath id="clip0_2_551">
         <rect width="50" height="50" fill="white"/>
       </clipPath>
     </defs>
@@ -171,11 +163,11 @@
               
 <div class="service el--p_f_7">
   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_2_55)">
+    <g clip-path="url(#clip0_2_55)2">
       <path d="M47.9174 22.9158H37.0505C37.2713 21.847 37.4047 20.7137 37.4047 19.5074C37.4047 12.7967 31.7025 6.30275 31.4608 6.02989C31.194 5.73193 30.7837 5.61113 30.392 5.72158C30.0087 5.83204 29.719 6.1549 29.6544 6.55081L29.0399 10.2342C27.9878 7.23208 26.1168 3.37981 22.8792 0.288104C22.5397 -0.0348561 22.0271 -0.0911079 21.6271 0.144349C21.2229 0.383908 21.0292 0.861072 21.1521 1.31314C21.9188 4.16323 21.0146 8.78418 20.0333 12.3968C19.7604 10.6488 19.2708 9.16339 18.425 8.66543C18.1042 8.47587 17.7041 8.47372 17.3791 8.65918C17.0541 8.84463 16.8541 9.19044 16.8541 9.56341C16.8541 11.0947 16.0728 12.5073 15.1686 14.1448C13.9623 16.3303 12.5935 18.8095 12.5935 22.3471C12.5935 22.5451 12.6227 22.7242 12.631 22.9159H2.08263C1.50761 22.9159 1.04089 23.3826 1.04089 23.9576V48.9584C1.04089 49.5335 1.50761 50.0002 2.08263 50.0002H47.9174C48.4925 50.0002 48.9592 49.5335 48.9592 48.9584V23.9576C48.9592 23.3825 48.4925 22.9158 47.9174 22.9158ZM40.6256 24.9992V31.2494H32.3107C33.9649 29.8243 35.5275 27.6993 36.4775 24.9992H40.6256ZM16.9936 15.1488C17.3623 14.4843 17.7206 13.8342 18.0269 13.1758C18.1977 14.5696 18.2957 16.3259 18.2749 18.0718C18.2686 18.5781 18.6269 19.0135 19.1228 19.1073C19.6271 19.2031 20.1104 18.926 20.2916 18.4552C20.4416 18.0552 23.4125 10.1549 23.5125 4.13598C27.3439 9.2382 28.221 15.3134 28.2314 15.3843C28.3002 15.8948 28.7335 16.2781 29.2482 16.2843C29.7294 16.2718 30.2065 15.9239 30.2899 15.4156L31.3191 9.2424C32.9254 11.5092 35.3213 15.5551 35.3213 19.5073C35.3213 27.2117 29.7628 31.2494 27.8398 31.2494H22.2937C21.3645 30.9931 14.6789 28.918 14.6789 22.3449C14.6788 19.3427 15.856 17.2114 16.9936 15.1488ZM32.2919 33.3328V39.583H17.7081V33.3328H22.1583H27.8397H32.2919ZM9.37457 24.9992H12.9267C13.6747 27.9763 15.6081 29.966 17.5019 31.2494H9.37457V24.9992ZM3.12436 24.9992H7.2912V31.2494H3.12436V24.9992ZM3.12436 33.3328H15.6248V39.583H3.12436V33.3328ZM7.2911 47.9166H3.12436V41.6664H7.2912V47.9166H7.2911ZM23.9584 47.9166H9.37457V41.6664H23.9584V47.9166ZM40.6256 47.9166H26.0417V41.6664H40.6255V47.9166H40.6256ZM46.8758 47.9166H42.709V41.6664H46.8758V47.9166ZM46.8758 39.583H34.3754V33.3328H46.8758V39.583ZM46.8758 31.2494H42.709V24.9992H46.8758V31.2494Z" fill="#01A1DD" class='text--tr_0-3'/>
     </g>
     <defs>
-      <clipPath id="clip0_2_55">
+      <clipPath id="clip0_2_552">
         <rect width="50" height="50" fill="white"/>
       </clipPath>
     </defs>
@@ -190,11 +182,11 @@
               
 <div class="service el--p_f_7">
   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_2_55)">
+    <g clip-path="url(#clip0_2_55)3">
       <path d="M47.9174 22.9158H37.0505C37.2713 21.847 37.4047 20.7137 37.4047 19.5074C37.4047 12.7967 31.7025 6.30275 31.4608 6.02989C31.194 5.73193 30.7837 5.61113 30.392 5.72158C30.0087 5.83204 29.719 6.1549 29.6544 6.55081L29.0399 10.2342C27.9878 7.23208 26.1168 3.37981 22.8792 0.288104C22.5397 -0.0348561 22.0271 -0.0911079 21.6271 0.144349C21.2229 0.383908 21.0292 0.861072 21.1521 1.31314C21.9188 4.16323 21.0146 8.78418 20.0333 12.3968C19.7604 10.6488 19.2708 9.16339 18.425 8.66543C18.1042 8.47587 17.7041 8.47372 17.3791 8.65918C17.0541 8.84463 16.8541 9.19044 16.8541 9.56341C16.8541 11.0947 16.0728 12.5073 15.1686 14.1448C13.9623 16.3303 12.5935 18.8095 12.5935 22.3471C12.5935 22.5451 12.6227 22.7242 12.631 22.9159H2.08263C1.50761 22.9159 1.04089 23.3826 1.04089 23.9576V48.9584C1.04089 49.5335 1.50761 50.0002 2.08263 50.0002H47.9174C48.4925 50.0002 48.9592 49.5335 48.9592 48.9584V23.9576C48.9592 23.3825 48.4925 22.9158 47.9174 22.9158ZM40.6256 24.9992V31.2494H32.3107C33.9649 29.8243 35.5275 27.6993 36.4775 24.9992H40.6256ZM16.9936 15.1488C17.3623 14.4843 17.7206 13.8342 18.0269 13.1758C18.1977 14.5696 18.2957 16.3259 18.2749 18.0718C18.2686 18.5781 18.6269 19.0135 19.1228 19.1073C19.6271 19.2031 20.1104 18.926 20.2916 18.4552C20.4416 18.0552 23.4125 10.1549 23.5125 4.13598C27.3439 9.2382 28.221 15.3134 28.2314 15.3843C28.3002 15.8948 28.7335 16.2781 29.2482 16.2843C29.7294 16.2718 30.2065 15.9239 30.2899 15.4156L31.3191 9.2424C32.9254 11.5092 35.3213 15.5551 35.3213 19.5073C35.3213 27.2117 29.7628 31.2494 27.8398 31.2494H22.2937C21.3645 30.9931 14.6789 28.918 14.6789 22.3449C14.6788 19.3427 15.856 17.2114 16.9936 15.1488ZM32.2919 33.3328V39.583H17.7081V33.3328H22.1583H27.8397H32.2919ZM9.37457 24.9992H12.9267C13.6747 27.9763 15.6081 29.966 17.5019 31.2494H9.37457V24.9992ZM3.12436 24.9992H7.2912V31.2494H3.12436V24.9992ZM3.12436 33.3328H15.6248V39.583H3.12436V33.3328ZM7.2911 47.9166H3.12436V41.6664H7.2912V47.9166H7.2911ZM23.9584 47.9166H9.37457V41.6664H23.9584V47.9166ZM40.6256 47.9166H26.0417V41.6664H40.6255V47.9166H40.6256ZM46.8758 47.9166H42.709V41.6664H46.8758V47.9166ZM46.8758 39.583H34.3754V33.3328H46.8758V39.583ZM46.8758 31.2494H42.709V24.9992H46.8758V31.2494Z" fill="#01A1DD" class='text--tr_0-3'/>
     </g>
     <defs>
-      <clipPath id="clip0_2_55">
+      <clipPath id="clip0_2_553">
         <rect width="50" height="50" fill="white"/>
       </clipPath>
     </defs>
@@ -209,11 +201,11 @@
               
 <div class="service el--p_f_7">
   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_2_55)">
+    <g clip-path="url(#clip0_2_55)4">
       <path d="M47.9174 22.9158H37.0505C37.2713 21.847 37.4047 20.7137 37.4047 19.5074C37.4047 12.7967 31.7025 6.30275 31.4608 6.02989C31.194 5.73193 30.7837 5.61113 30.392 5.72158C30.0087 5.83204 29.719 6.1549 29.6544 6.55081L29.0399 10.2342C27.9878 7.23208 26.1168 3.37981 22.8792 0.288104C22.5397 -0.0348561 22.0271 -0.0911079 21.6271 0.144349C21.2229 0.383908 21.0292 0.861072 21.1521 1.31314C21.9188 4.16323 21.0146 8.78418 20.0333 12.3968C19.7604 10.6488 19.2708 9.16339 18.425 8.66543C18.1042 8.47587 17.7041 8.47372 17.3791 8.65918C17.0541 8.84463 16.8541 9.19044 16.8541 9.56341C16.8541 11.0947 16.0728 12.5073 15.1686 14.1448C13.9623 16.3303 12.5935 18.8095 12.5935 22.3471C12.5935 22.5451 12.6227 22.7242 12.631 22.9159H2.08263C1.50761 22.9159 1.04089 23.3826 1.04089 23.9576V48.9584C1.04089 49.5335 1.50761 50.0002 2.08263 50.0002H47.9174C48.4925 50.0002 48.9592 49.5335 48.9592 48.9584V23.9576C48.9592 23.3825 48.4925 22.9158 47.9174 22.9158ZM40.6256 24.9992V31.2494H32.3107C33.9649 29.8243 35.5275 27.6993 36.4775 24.9992H40.6256ZM16.9936 15.1488C17.3623 14.4843 17.7206 13.8342 18.0269 13.1758C18.1977 14.5696 18.2957 16.3259 18.2749 18.0718C18.2686 18.5781 18.6269 19.0135 19.1228 19.1073C19.6271 19.2031 20.1104 18.926 20.2916 18.4552C20.4416 18.0552 23.4125 10.1549 23.5125 4.13598C27.3439 9.2382 28.221 15.3134 28.2314 15.3843C28.3002 15.8948 28.7335 16.2781 29.2482 16.2843C29.7294 16.2718 30.2065 15.9239 30.2899 15.4156L31.3191 9.2424C32.9254 11.5092 35.3213 15.5551 35.3213 19.5073C35.3213 27.2117 29.7628 31.2494 27.8398 31.2494H22.2937C21.3645 30.9931 14.6789 28.918 14.6789 22.3449C14.6788 19.3427 15.856 17.2114 16.9936 15.1488ZM32.2919 33.3328V39.583H17.7081V33.3328H22.1583H27.8397H32.2919ZM9.37457 24.9992H12.9267C13.6747 27.9763 15.6081 29.966 17.5019 31.2494H9.37457V24.9992ZM3.12436 24.9992H7.2912V31.2494H3.12436V24.9992ZM3.12436 33.3328H15.6248V39.583H3.12436V33.3328ZM7.2911 47.9166H3.12436V41.6664H7.2912V47.9166H7.2911ZM23.9584 47.9166H9.37457V41.6664H23.9584V47.9166ZM40.6256 47.9166H26.0417V41.6664H40.6255V47.9166H40.6256ZM46.8758 47.9166H42.709V41.6664H46.8758V47.9166ZM46.8758 39.583H34.3754V33.3328H46.8758V39.583ZM46.8758 31.2494H42.709V24.9992H46.8758V31.2494Z" fill="#01A1DD" class='text--tr_0-3'/>
     </g>
     <defs>
-      <clipPath id="clip0_2_55">
+      <clipPath id="clip0_2_554">
         <rect width="50" height="50" fill="white"/>
       </clipPath>
     </defs>
@@ -228,26 +220,28 @@
         <div class="row row--justify_center">
           <a href="#" class='button button--bg_white button--br_1_blue button--c_blue button--hover_oposite-white el--p_h_3 el--p_v_5 el--p_h_4 el--p_v_9 text text--c_blue text--tr_uppercase'>find more</a>
         </div>
-        <!-- <div></div> -->
       </div>
     </div>
   </section>
-  <section class="news el--p_t_8">
+    <section class="news el--p_t_8">
     <div class="container container--variant_tiny rel">
       <div class="el--p_t_7-xl el--p_t_3-md el--p_t_1-md">
-        <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Latest news</h1>
+        <h2 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">
+          <span>Latest news</span>
+          <span class="text text--c_blue text--decorate_helper">.</span>
+        </h2>
         <div class="el--p_t_1-md">
           <p class="text text--c_blue text--ta_center text--size_1sm text--size_1md-md text--w_500">Check out some of our news.</p>
         </div>
       </div>
       <div class="el--m_t_6 el--m_t_8-md el--m_t_10-xl el--p_v_8">
         <div class="el--p_v_4-xl">
-          <div class="slider">
+          <div class="js-slider">
             
               
 <div class="news-block el--p_b_7">
   <div class="news-block-wrapper">
-    <picture><source srcset="img/news.webp" type="image/webp"><img class="news-block__image" src="img/news.jpg" alt="image of news" width="200" height="300"></picture>
+    <picture><source srcset="img/news.webp" type="image/webp"><img class="news-block__image" src="img/news.jpg" alt="image of news" width="350" height="250" loading="lazy"></picture>
   </div>  
   <h3 class="text text--w_500 text--c_blue text--size text--size_2sm text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 text--tr_uppercase news-block__title">Data sience</h3>
   <p class="text text--w_400 text--c_black text--size_2xs text--size_2sm-md text--ta_center text--tr_0-3 text--lh_18">Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.</p>
@@ -260,7 +254,7 @@
               
 <div class="news-block el--p_b_7">
   <div class="news-block-wrapper">
-    <picture><source srcset="img/news.webp" type="image/webp"><img class="news-block__image" src="img/news.jpg" alt="image of news" width="200" height="300"></picture>
+    <picture><source srcset="img/news.webp" type="image/webp"><img class="news-block__image" src="img/news.jpg" alt="image of news" width="350" height="250" loading="lazy"></picture>
   </div>  
   <h3 class="text text--w_500 text--c_blue text--size text--size_2sm text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 text--tr_uppercase news-block__title">Data sience</h3>
   <p class="text text--w_400 text--c_black text--size_2xs text--size_2sm-md text--ta_center text--tr_0-3 text--lh_18">Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.</p>
@@ -273,7 +267,7 @@
               
 <div class="news-block el--p_b_7">
   <div class="news-block-wrapper">
-    <picture><source srcset="img/news.webp" type="image/webp"><img class="news-block__image" src="img/news.jpg" alt="image of news" width="200" height="300"></picture>
+    <picture><source srcset="img/news.webp" type="image/webp"><img class="news-block__image" src="img/news.jpg" alt="image of news" width="350" height="250" loading="lazy"></picture>
   </div>  
   <h3 class="text text--w_500 text--c_blue text--size text--size_2sm text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 text--tr_uppercase news-block__title">Data sience</h3>
   <p class="text text--w_400 text--c_black text--size_2xs text--size_2sm-md text--ta_center text--tr_0-3 text--lh_18">Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.</p>
@@ -286,7 +280,7 @@
               
 <div class="news-block el--p_b_7">
   <div class="news-block-wrapper">
-    <picture><source srcset="img/news.webp" type="image/webp"><img class="news-block__image" src="img/news.jpg" alt="image of news" width="200" height="300"></picture>
+    <picture><source srcset="img/news.webp" type="image/webp"><img class="news-block__image" src="img/news.jpg" alt="image of news" width="350" height="250" loading="lazy"></picture>
   </div>  
   <h3 class="text text--w_500 text--c_blue text--size text--size_2sm text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 text--tr_uppercase news-block__title">Data sience</h3>
   <p class="text text--w_400 text--c_black text--size_2xs text--size_2sm-md text--ta_center text--tr_0-3 text--lh_18">Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.</p>
@@ -313,18 +307,21 @@
   </section>
   <section class="events el--p_t_9">
     <div class="container container--variant_tiny">
-      <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Services</h1>
-      <div class="el--p_t_1-md">
+      <h2 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">
+        <span>Upcoming events</span>
+        <span class="text text--c_blue text--decorate_helper">.</span>
+      </h2>
+      <div class="el--p_t_1">
         <p class="text text--c_blue text--ta_center text--size_1sm text--size_1md-md text--w_500">Services that we provide.</p>
       </div>
-      <div class="events-wrapper el--m_h_4 el--m_h_6-md el--m_h_8-xl"">
+      <div class="events-wrapper el--m_h_4 el--m_h_6-md el--m_h_8-xl">
         <div class="row row--justify_center row--justify_between-md">
           <div class="cell_12 cell_5-md">
             
               
-                <div class="event-big el--p_t_2-till-xl">
+                <div class="event-big el--p_t_2 el--p_t_none-xl">
                   <div class="event-big-wrapper rel">
-                    <picture><source srcset="img/news.webp" type="image/webp"><img class="event-big__image" src="img/news.jpg" alt="image of news" width="200" height="300"></picture>
+                    <picture><source srcset="img/news.webp" type="image/webp"><img class="event-big__image" src="img/news.jpg" alt="image of big event" width="495" height="385" loading="lazy"></picture>
                     <div class="event-big__main-info el--p_t_1 el--p_v_4 el--p_v_5-md">
                       <div class="row row--justify_between">
                         <div class="cell_auto">
@@ -336,7 +333,7 @@
                       </div>
                     </div>
                   </div>
-                  <h3 class="text text--w_500 text--c_black text--size text--size_lg text--size_2lg-md text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2  event-big__title">IKEA presentation of furniture</h3>
+                  <a href="#" class="text text--w_500 text--c_black text--size text--size_lg text--size_2lg-md text--ta_center text--tr_0-3 text--decoration_none el--p_b_1 el--p_t_2  event-big__title">IKEA presentation of furniture</a>
                   <p class="text text--c_black text--size_2sm text--size_standart-md text--lh_18 text--lh_22-md text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 el--p_t_none-md el--p_v_5 news-block__title">Nunc felis ex, pellentesque vel accumsan eget, suscipit quis lectus. Nunc mollis fermentum metus, auctor elementum lacus facilisis ut.</p>
                 </div>
               
@@ -351,7 +348,7 @@
             
           </div>
           <div class="cell_12 cell_7-md">
-            <div class="events-small el--p_v_3-till-sm">
+            <div class="events-small el--p_v_3 el--p_v_none-sm">
               <div class="row row--justify_center row--justify_between-sm">
                   
                   
@@ -361,7 +358,7 @@
                       
 <div class="event-small">
   <div class="event-small-wrapper rel">
-    <picture><source srcset="img/news.webp" type="image/webp"><img class="event-small__image" src="img/news.jpg" alt="image of news" width="200" height="300"></picture>
+    <picture><source srcset="img/news.webp" type="image/webp"><img class="event-small__image" src="img/news.jpg" alt="image of event" width="300" height="220" loading="lazy"></picture>
     <div class="event-small__main-info el--p_t_1 el--p_v_4 el--p_v_3-md el--p_v_5-xl">
       <div class="row row--justify_between">
         <div class="cell_auto">
@@ -373,7 +370,7 @@
       </div>
     </div>
   </div>
-  <h3 class="text text--w_500 text--c_black text--size text--size_2sm text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 event-small__title">IKEA presentation of furniture</h3>
+  <a href="#" class="text text--w_500 text--c_black text--size text--size_2sm text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 text--decoration_none event-small__title">IKEA presentation of furniture</a>
 </div>
 
                     </div>
@@ -384,7 +381,7 @@
                       
 <div class="event-small">
   <div class="event-small-wrapper rel">
-    <picture><source srcset="img/news.webp" type="image/webp"><img class="event-small__image" src="img/news.jpg" alt="image of news" width="200" height="300"></picture>
+    <picture><source srcset="img/news.webp" type="image/webp"><img class="event-small__image" src="img/news.jpg" alt="image of event" width="300" height="220" loading="lazy"></picture>
     <div class="event-small__main-info el--p_t_1 el--p_v_4 el--p_v_3-md el--p_v_5-xl">
       <div class="row row--justify_between">
         <div class="cell_auto">
@@ -396,7 +393,7 @@
       </div>
     </div>
   </div>
-  <h3 class="text text--w_500 text--c_black text--size text--size_2sm text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 event-small__title">IKEA presentation of furniture</h3>
+  <a href="#" class="text text--w_500 text--c_black text--size text--size_2sm text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 text--decoration_none event-small__title">IKEA presentation of furniture</a>
 </div>
 
                     </div>
@@ -407,7 +404,7 @@
                       
 <div class="event-small">
   <div class="event-small-wrapper rel">
-    <picture><source srcset="img/news.webp" type="image/webp"><img class="event-small__image" src="img/news.jpg" alt="image of news" width="200" height="300"></picture>
+    <picture><source srcset="img/news.webp" type="image/webp"><img class="event-small__image" src="img/news.jpg" alt="image of event" width="300" height="220" loading="lazy"></picture>
     <div class="event-small__main-info el--p_t_1 el--p_v_4 el--p_v_3-md el--p_v_5-xl">
       <div class="row row--justify_between">
         <div class="cell_auto">
@@ -419,7 +416,7 @@
       </div>
     </div>
   </div>
-  <h3 class="text text--w_500 text--c_black text--size text--size_2sm text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 event-small__title">IKEA presentation of furniture</h3>
+  <a href="#" class="text text--w_500 text--c_black text--size text--size_2sm text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 text--decoration_none event-small__title">IKEA presentation of furniture</a>
 </div>
 
                     </div>
@@ -430,7 +427,7 @@
                       
 <div class="event-small">
   <div class="event-small-wrapper rel">
-    <picture><source srcset="img/news.webp" type="image/webp"><img class="event-small__image" src="img/news.jpg" alt="image of news" width="200" height="300"></picture>
+    <picture><source srcset="img/news.webp" type="image/webp"><img class="event-small__image" src="img/news.jpg" alt="image of event" width="300" height="220" loading="lazy"></picture>
     <div class="event-small__main-info el--p_t_1 el--p_v_4 el--p_v_3-md el--p_v_5-xl">
       <div class="row row--justify_between">
         <div class="cell_auto">
@@ -442,7 +439,7 @@
       </div>
     </div>
   </div>
-  <h3 class="text text--w_500 text--c_black text--size text--size_2sm text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 event-small__title">IKEA presentation of furniture</h3>
+  <a href="#" class="text text--w_500 text--c_black text--size text--size_2sm text--ta_center text--tr_0-3 el--p_b_1 el--p_t_2 text--decoration_none event-small__title">IKEA presentation of furniture</a>
 </div>
 
                     </div>
@@ -456,7 +453,10 @@
     </div>
   </section>
   <section class="works el--p_t_2">
-    <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Services</h1>
+    <h2 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">
+      <span>Our works</span>
+      <span class="text text--c_blue text--decorate_helper">.</span>
+    </h2>
     <div class="el--p_t_1-md">
       <p class="text text--c_blue text--ta_center text--size_1sm text--size_1md-md text--w_500">Services that we provide.</p>
     </div>
@@ -466,7 +466,7 @@
           
 <div class="cell_auto cell_3-xl cell_auto-fhd el--p_f_5-md">
   <div class="work rel">
-    <picture><source srcset="img/news.webp" type="image/webp"><img class="work__image" src="img/news.jpg" alt=""></picture>
+    <picture><source srcset="img/news.webp" type="image/webp"><img class="work__image" src="img/news.jpg" width="360" height="260" alt="image of gallary"></picture>
     <div class="work-info">
       <span class="work-info__type-event text text--size_standart text--w_300 text--ta_center text--c_white">project</span>
       <h3 class="work-info__type-event text text--size_3lg text--w_700 text--ta_center text--c_white text--tr_uppercase el--m_t_3">REVIEWAL</h3>
@@ -486,7 +486,7 @@
           
 <div class="cell_auto cell_3-xl cell_auto-fhd el--p_f_5-md">
   <div class="work rel">
-    <picture><source srcset="img/news.webp" type="image/webp"><img class="work__image" src="img/news.jpg" alt=""></picture>
+    <picture><source srcset="img/news.webp" type="image/webp"><img class="work__image" src="img/news.jpg" width="360" height="260" alt="image of gallary"></picture>
     <div class="work-info">
       <span class="work-info__type-event text text--size_standart text--w_300 text--ta_center text--c_white">project</span>
       <h3 class="work-info__type-event text text--size_3lg text--w_700 text--ta_center text--c_white text--tr_uppercase el--m_t_3">REVIEWAL</h3>
@@ -506,7 +506,7 @@
           
 <div class="cell_auto cell_3-xl cell_auto-fhd el--p_f_5-md">
   <div class="work rel">
-    <picture><source srcset="img/news.webp" type="image/webp"><img class="work__image" src="img/news.jpg" alt=""></picture>
+    <picture><source srcset="img/news.webp" type="image/webp"><img class="work__image" src="img/news.jpg" width="360" height="260" alt="image of gallary"></picture>
     <div class="work-info">
       <span class="work-info__type-event text text--size_standart text--w_300 text--ta_center text--c_white">project</span>
       <h3 class="work-info__type-event text text--size_3lg text--w_700 text--ta_center text--c_white text--tr_uppercase el--m_t_3">REVIEWAL</h3>
@@ -526,7 +526,7 @@
           
 <div class="cell_auto cell_3-xl cell_auto-fhd el--p_f_5-md">
   <div class="work rel">
-    <picture><source srcset="img/news.webp" type="image/webp"><img class="work__image" src="img/news.jpg" alt=""></picture>
+    <picture><source srcset="img/news.webp" type="image/webp"><img class="work__image" src="img/news.jpg" width="360" height="260" alt="image of gallary"></picture>
     <div class="work-info">
       <span class="work-info__type-event text text--size_standart text--w_300 text--ta_center text--c_white">project</span>
       <h3 class="work-info__type-event text text--size_3lg text--w_700 text--ta_center text--c_white text--tr_uppercase el--m_t_3">REVIEWAL</h3>
@@ -547,59 +547,64 @@
     </div>  
   </section>
   <section class="contact el--p_t_10">
-    <h1 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">Contact us</h1>
+    <h2 class="text text--c_black text--ta_center text--tr_upp text--size_xl text--size_2xl-md text--decoration_element-main text--w_700">
+      <span>Contact us</span>
+      <span class="text text--c_blue text--decorate_helper">.</span>
+    </h2>
     <div class="el--p_t_1-md">
       <p class="text text--c_blue text--ta_center text--size_1sm text--size_1md-md text--w_500">Connect to our space team.</p>
     </div>
     <div class="contact-wrapper el--p_t_6">
       <div class="row row--justify_center">
         <form class="contact-us el--p_v_5-till-xl" method="post" autocomplete="off">
-          <div class="row row--direction_column row--align_end">
+          <div class="row row--direction_column row--align_center row--align_end-md">
             <div class="cell_12 el--m_b_4 el--m_b_5-md">
               <div class="row row--justify_between row--align_center">
                 <label for="name" class="text text--size_3sm text--size_2md-md text--c_black">Your name</label>
                 <span class="text text--size_1xs text--size_2xs-md text--c_blue">required</span>
               </div>
-              <input type="text" id="name" class="field field--typical field--br_gray field--bg_white el--m_t_1 el--m_t_2-md">
+              <input type="text" id="name" class="field field--typical field--br_gray field--bg_white field--hover el--m_t_1 el--m_t_2-md">
             </div>
             <div class="cell_12 el--m_b_4 el--m_b_5-md">
               <div class="row row--justify_between row--align_center">
                 <label for="email" class="text text--size_3sm text--size_2md-md text--c_black">Your email</label>
                 <span class="text text--size_1xs text--size_2xs-md text--c_blue">required</span>
               </div>
-              <input type="text" id="email" class="field field--typical field--br_gray field--bg_white el--m_t_1 el--m_t_2-md">
+              <input type="email" id="email" class="field field--typical field--br_gray field--bg_white field--hover el--m_t_1 el--m_t_2-md">
             </div>
             <div class="cell_12 el--m_b_4 el--m_b_5-md">
               <div class="row row--justify_between row--align_center">
                 <label for="message" class="text text--size_3sm text--size_2md-md text--c_black">Text additional</label>
                 <span class="text text--size_1xs text--size_2xs-md text--c_blue">required</span>
               </div>
-              <textarea name="message" id="message" class="field field--br_gray field--bg_white field--area el--m_t_1 el--m_t_2-md"></textarea>
+              <textarea name="message" id="message" class="field field--br_gray field--bg_white field--area field--hover el--m_t_1 el--m_t_2-md"></textarea>
             </div>
             <div class="cell_auto rel">
-              <input type="submit" value="Save" class="button button--bg_blue button--br_1_blue button--c_blue button--hover_oposite-blue text text--c_white text--tr_uppercase text--w_500 el--p_h_4 el--p_r_4 el--p_l_9 pointer field-button">
+              <input type="submit" aria-label="Submit" value="Save" class="button button--bg_blue button--br_1_blue button--c_blue button--hover_oposite-blue text text--c_white text--tr_uppercase text--w_500 el--p_h_4 el--p_r_4 el--p_l_9 pointer field-button">
               <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="submit-icon">
                 <path d="M12.7441 0.335938L5.03906 8.04102L2.22656 5.19922C2.08008 5.08203 1.8457 5.08203 1.72852 5.19922L0.878906 6.04883C0.761719 6.16602 0.761719 6.40039 0.878906 6.54688L4.80469 10.4434C4.95117 10.5898 5.15625 10.5898 5.30273 10.4434L14.0918 1.6543C14.209 1.53711 14.209 1.30273 14.0918 1.15625L13.2422 0.335938C13.125 0.189453 12.8906 0.189453 12.7441 0.335938Z" fill="white"/>
               </svg>
-                
             </div>
           </div>
         </form>
       </div>
     </div>  
   </section>
+</main>  
 
   <footer class="footer el--p_t_9 el--p_b_10 ">
   <div class="container container--variant_tiny">
     <div class="row row--align_center">
       <div class="cell_12 cell_auto-sm">
         <div class="footer-logo row row--justify_center row--align_center">
-          <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo" class="footer-logo__img"></picture>
+          <a href="#">
+            <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo" class="footer-logo__img"></picture>
+          </a>  
         </div>
       </div>
       <div class="cell_12 cell_auto-sm">
         <div class="contacts el--p_h_7 el--p_b_none-sm el--p_h_none-md">
-          <div class="row row--direction_column-till-sm row--align_center">
+          <div class="row row--direction_column row--direction_row-sm row--align_center">
             <div class="cell_12-sm el--m_b_2-sm">
               <h3 class="text text--c_blue text--tr_uppercase text--w_600">contacts</h3>
             </div>
@@ -634,8 +639,9 @@
         <div class="row row--align_center">
           <div class="cell_12 cell_auto-sm">
             <h4 class="text text--2xs text--c_black text--ta_center">
-              Copyright 2021, ITtech</div>
+              Copyright 2021, ITtech
             </h4>
+          </div>
           <div class="cell_12 cell_auto-sm el--p_h_4 el--p_h_none-sm el--p_l_5-sm el--p_l_7-md el--p_l_9-lg el--p_l_60-xl">
             <div class="row row--align_center row--direction_column row--direction_row-sm">
               <a href="#" class="text text--c_blue size_2sm text--w_500 text--tr_uppercase text--decoration_none text--hover_underline el--p_r_5-sm">Privacy policy</a>
@@ -644,14 +650,14 @@
           </div>
           <div class="cell_12 cell_auto-sm cell_4-md cell_auto-lg el--m_l_5-md el--m_l_8-lg el--m_l_10-lg el--m_l_90-xl">
             <p class="text text--c_blue text--size_1xs text--w_300 text--ta_center el--p_t_7-sm el--p_t_none-md">
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</div>
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
             </p>
+          </div>
         </div>
       </div>
     </div>
   </div>  
 </footer>
-//
-  <script src="js/app.min.js?_v=20220531115717"></script>
+  <script src="js/app.min.js?_v=20220531225414" async></script>
 </body>
 </html>

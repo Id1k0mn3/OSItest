@@ -26,7 +26,7 @@ $type-font-size-map: map-merge($type-font-size-map, ('lg': $type-font-size-lg));
 $type-font-size-map: map-merge($type-font-size-map, ('2lg': $type-font-size-2lg));
 $type-font-size-map: map-merge($type-font-size-map, ('3lg': $type-font-size-3lg));
 $type-font-size-map: map-merge($type-font-size-map, ('xl': $type-font-size-xl));
-$type-font-size-map: map-merge($type-font-size-map, ('xl': $type-font-size-2xl));
+$type-font-size-map: map-merge($type-font-size-map, ('2xl': $type-font-size-2xl));
 
 // colors
 $text-1: #000000 !default;

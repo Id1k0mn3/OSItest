@@ -3,6 +3,7 @@
   border: none
   width: 100%
   height: 58px
+  +tr
   &--
     &br_
       &gray
@@ -12,3 +13,7 @@
         background: white
     &area
       min-height: 200px
+    &hover
+      &:hover,
+      &:focus
+        border-color: $relief-blue

@@ -40,22 +40,11 @@
               margin-bottom: 10px
           &-
             &main
-              display: flex
-              align-items: flex-end
-              justify-content: center
-              &:after
-                width: 8px
-                height: 8px
-                margin-bottom: 10px
-                margin-left: 4px
-                @extend .text--decoration_element
-                +mq-md
-                  width: 10px
-                  height: 10px
-                +mq-xl
-                  width: 14px
-                  height: 14px
-                  margin-left: 10px
+              // display: flex
+              // justify-content: center
+    &decorate_helper
+      display: inline-block
+      margin-left: -7px
     &tr_
       &0-3
         transition: 0.3s
@@ -94,3 +83,8 @@
         &:hover
           +mq-md
             text-decoration: underline
+    &inline
+      display: inline
+      width: -moz-fit-content
+      width: fit-content
+      display: table

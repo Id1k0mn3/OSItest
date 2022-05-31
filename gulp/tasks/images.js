@@ -2,7 +2,7 @@ import webp from 'gulp-webp'
 import imagemin from 'gulp-imagemin'
 
 export  const images = () => {
-  return app.gulp.src(`${app.path.src.images}/**/*.{jpg,jpeg,png,gif,webp}`)
+  return app.gulp.src(`${app.path.src.images}/**/*.{jpg,jpeg,png,gif,webp,ico}`)
     .pipe(app.plugins.plumber(
       app.plugins.notify.onError({
         tittle: 'IMAGES',
@@ -12,7 +12,7 @@ export  const images = () => {
     .pipe(app.plugins.newer(app.path.build.img))
     .pipe(webp())
     .pipe(app.gulp.dest(app.path.build.img))
-    .pipe(app.gulp.src(`${app.path.src.images}/**/*.{jpg,jpeg,png,gif,webp}`))
+    .pipe(app.gulp.src(`${app.path.src.images}/**/*.{jpg,jpeg,png,gif,webp,ico}`))
     .pipe(app.plugins.newer(app.path.build.img))
     .pipe(imagemin({
       progressive: true,
