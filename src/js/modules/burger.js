@@ -1,10 +1,12 @@
 const burgerButton = document.getElementById('burger')
 const menu = document.getElementById('menu')
+const body = document.getElementById('body')
 
 export function burger() {
   burgerButton.addEventListener('click', () => {
     burgerButton.classList.toggle('burger--active')
     menu.classList.toggle('menu--active')
+    body.classList.toggle('blocked')
   })
 }
 
@@ -17,5 +19,6 @@ document.addEventListener('click', e => {
   if (!clickOnMenu && !hamburger && activeMenu) {
     burgerButton.classList.toggle('burger--active')
     menu.classList.toggle('menu--active')
+    body.classList.toggle('blocked')
   }
 })

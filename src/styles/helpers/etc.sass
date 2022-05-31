@@ -1,2 +1,15 @@
 .rel
   position: relative
+
+.overlay
+  display: none
+  width: 100vw
+  height: 100vh
+  background: rgba(0, 0, 0, 0.5)
+  z-index: 3
+  top: 0
+  position: absolute
+.blocked
+  overflow: hidden
+  .overlay
+    display: block

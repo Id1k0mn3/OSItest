@@ -1099,6 +1099,24 @@ input {
   position: relative;
 }
 
+.overlay {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  top: 0;
+  position: absolute;
+}
+
+.blocked {
+  overflow: hidden;
+}
+
+.blocked .overlay {
+  display: block;
+}
+
 .field {
   outline: none;
   border: none;
@@ -1250,6 +1268,7 @@ input {
   -o-transition: 0.3s;
   transition: 0.3s;
   height: 100vh;
+  z-index: 4;
 }
 
 .menu--desctop {
